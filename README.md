@@ -1,2 +1,1 @@
-# FedRobust-Bench
-A CPU-friendly PyTorch benchmark of Federated Averaging (FedAvg) under non-IID data and malicious clients, with robust aggregation defenses.
+FedRobust-Bench is a lightweight benchmark for studying how federated learning behaves under realistic conditions. It implements Federated Averaging (FedAvg) in plain PyTorch and evaluates it on MNIST with varying levels of data heterogeneity (non-IID splits via a Dirichlet distribution) and with malicious clients that send poisoned updates. It also compares the standard mean aggregation against robust alternatives such as coordinate-wise median. Everything runs on a CPU with 16 GB of RAM, so results are easy to reproduce without a GPU.
